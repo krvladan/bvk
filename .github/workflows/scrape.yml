@@ -16,6 +16,8 @@ jobs:
       run: |-
         curl https://www.bvk.rs/kvarovi-na-mrezi/ | head -n -1 > kvarovi-na-mrezi.html
         curl https://www.bvk.rs/planirani-radovi/ | head -n -1 > planirani-radovi.html
+        curl https://www.bvk.rs/en/repairs/ | head -n -1 > repairs.html
+        curl https://www.bvk.rs/en/planned-works/ | head -n -1 > planned-works.html
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
